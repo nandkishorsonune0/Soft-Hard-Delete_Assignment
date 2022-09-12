@@ -1,0 +1,22 @@
+GET http://localhost:3000/students
+
+###
+POST http://localhost:3000/students
+content-type: application/json
+
+{
+    "name": "Sanorita",
+    "sex": "female",
+    "class": "IX",
+    "age": 15,
+    "grade_point": 89.56
+}
+
+###
+GET http://localhost:3000/students/5fd74bc15fb5dc4dc0820715
+
+###
+DELETE http://localhost:3000/students/5fd74bc15fb5dc4dc0820715?type=hard
+
+###
+DELETE http://localhost:3000/students/5fd74bc15fb5dc4dc0820715?type=soft
